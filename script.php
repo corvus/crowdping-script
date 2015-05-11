@@ -157,8 +157,8 @@ if (LOG_ENABLED === true && count($log) > 1) {
             @file_put_contents($logFile, $logContent, FILE_APPEND | LOCK_EX);
         }
         else {
-            fwrite($fp, $logContent);
-            flock($fp, LOCK_UN);
+            @fwrite($fp, $logContent);
+            @flock($fp, LOCK_UN);
             @fclose($fp);
         }
     }
