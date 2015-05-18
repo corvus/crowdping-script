@@ -4,7 +4,7 @@
 /*         http://www.zweischneider.de          */
 /* ******************************************** */
 
-const LOG_ENABLED = true; // true enables logging of incoming requests
+const LOG_ENABLED = false; // true enables logging of incoming requests
 const LOG_MAX_FILESIZE = 1024; // in KB
 const LOG_MAX_FILES = 7;
 
